@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<section class="persons-section">
+    <div class="persons-div">
+        <% for(let person of persons){ %>
+           <div class="persons-person-div">
+               <div class="persons-info">
+                    <h2 class="persons-name">
+                        <%= person.name %>
+                    </h2>
+                    <p class="persons-phno">
+                        <%= person.phoneNumber %>
+                    </p>
+                    <p class="persons-email">
+                        <%= person.email %>
+                    </p>
+                    <% if(person.isAvailable){ %>
+                        <div class="avail-div"></div>
+                    <% }else{ %>
+                        <div class="not-avail-div"></div>
+                    <% } %>
+                    <a href="/persons/<%=person._id%>"><i class="fas fa-arrow-right"></i></a>
+               </div>
+           </div>
+        <% } %>
+    </div>
+</section>
+
+
+<%- include('../partials/footer') %>

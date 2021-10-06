@@ -1,0 +1,314 @@
+:root {
+    --main-color:#0096c7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--main-color);
+    margin: 0px;
+}
+.nav-link {
+    color: #ff1654;
+}
+section {
+    padding: 0;
+}
+
+
+
+/* Home.ejs */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/bg.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-form-div {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+input {
+    padding: .375rem .75rem;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-bottom: .5rem;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+}
+.home-heading {
+    text-align: center;
+    font-weight: 520;
+}
+
+.home-btn {
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+/* persons.ejs */
+.persons-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5rem 0 3rem 0;
+    background-color: #F0F2F5;
+}
+.persons-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.persons-person-div {
+    display: flex;
+    align-items: center;
+    width: 28vw;
+    margin: 2rem;
+    height: 13.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+    position: relative;
+    padding: 0.5rem;
+    background-color: white;
+}
+.persons-info {
+    margin-left: 1rem;
+}
+.persons-name {
+    color: #1877F2;
+}
+.avail-div {
+    background-color: green;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.not-avail-div {
+    background-color: red;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.fa-arrow-right {
+    margin: 0.5rem;
+    font-size: 2rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #1877F2;
+    transition: all 0.2s ease-in-out;
+}
+.fa-arrow-right:hover {
+    transform: scale(1.1);
+}
+
+/* person.ejs */
+.person-section {
+    min-height: 100vh;
+    padding: 8rem 0 3rem 0;
+    background-color: #F0F2F5;
+}
+.person-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.person-sub-div {
+    height: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.person-info-div {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 3rem 1rem 3rem 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+    border-radius: 1.2rem;
+}
+.person-info-buttons button {
+    margin: 0.5rem;
+    height: 3rem;
+    width: 10rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.person-info-buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+}
+.person-info {
+    margin-left: 1rem;
+}
+.person-dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 90vw;
+}
+.person-date-div {
+    display: flex;
+    justify-content: space-around;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+tr {
+    height: 3rem;
+}
+
+/* search.ejs */
+.search-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0 3rem 0;
+    background-color: #F0F2F5;
+}
+.search-form-div {
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.search-heading {
+    text-align: center;
+    color: #1877F2;
+    font-weight: 520;
+}
+
+.search-btn {
+    border-radius: 1rem;
+    margin-top: 1rem;
+    background-color: #1877F2;
+    color: white;
+}
+
+/* No Person Found */
+.no-person-section {
+    min-height: 100vh;
+    padding: 8rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F0F2F5;
+}
+.no-person-div h1 {
+    color: red;
+    font-size: 6.5rem;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+.no-person-div h5 {
+    font-size: 2.6rem;
+    margin: 0.5rem;
+}
+.no-person-btn {
+    background-color: #1877F2;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-form-div, .search-form-div {
+        margin-left: 0;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .persons-person-div {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 750px) {
+    .home-form-div, .search-form-div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .persons-div {
+        justify-content: center;
+    }
+    .persons-person-div {
+        width: 80vw;
+    }
+    .person-info-div {
+        flex-direction: column;
+    }
+    .person-info-buttons {
+        margin-top: 1rem;
+        display: flex;
+    }
+}

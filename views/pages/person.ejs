@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<section class="person-section">
+    <div class="person-div">
+        <div class="person-info-div">
+            <div class="person-info">
+                <h1>
+                    <%= person.name %>
+                </h1>
+                <h6>
+                    <%= person.phoneNumber %>
+                </h6>
+                <h6>
+                    <%= person.email %>
+                </h6>
+            </div>
+            <div class="person-info-buttons">
+                <form action="/persons/<%= person._id %>?_method=DELETE"  method="POST">
+                    <button type="submit">Delete This Person</button>
+                </form>
+            </div>
+        </div>
+        <div class="person-dates">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Check-In Time</th>
+                    <th>Check-Out Time</th>
+                </tr>
+                <% for(let day of person.days){ %>
+                    <tr>
+                        <td><%= day.date %></td>
+                        <td><%= day.checkIn %></td>
+                        <td><%= day.checkOut %></td>
+                    </tr>
+                <% } %>
+                
+            </table>
+        </div>
+    </div>
+</section>
+
+<%- include('../partials/footer') %>

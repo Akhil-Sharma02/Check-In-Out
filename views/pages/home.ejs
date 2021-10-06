@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<section class="home-section">
+    <div class="home-form-div">
+        <h1 class="home-heading">Enter Your Details</h1>
+        <form action="/persons" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <button type="submit" class="btn home-btn btn-success btn-small">Check In/Out</button>
+        </form>
+    </div>
+</section>
+
+
+<%- include('../partials/footer') %>
