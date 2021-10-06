@@ -6,19 +6,13 @@ const { DateTime } = require('luxon');
 
 
 const getTime = () => {
-    // let today = new Date();
-    // let currentTime = String(today.getHours()).padStart(2, '0') + ':' + String(today.getMinutes()).padStart(2, '0');
     let lodate = DateTime.local().setZone("Asia/Calcutta");
     return lodate.toLocaleString(DateTime.TIME_SIMPLE);
-    // return currentTime;
 };
 
 const getDate = () => {
-    // let today = new Date();
-    // let todayDate = String(today.getDate()).padStart(2, '0') + '/' + String(today.getMonth() + 1).padStart(2, '0') + '/' + today.getFullYear();
     let lodate = DateTime.local().setZone("Asia/Calcutta");
     return lodate.toLocaleString(DateTime.DATE_FULL);
-    // return todayDate;
 };
 
 
