@@ -31,8 +31,6 @@ const sendMail = function (req, todayDate, currentTime, isAvailable) {
             text: req.name + ', you just checked out at ' + currentTime + ' on ' + todayDate + '.',
         };
     };
-    console.log(currentTime);
-    console.log(todayDate);
     sgMail
         .send(msg)
         .then(() => {
