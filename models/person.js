@@ -9,7 +9,6 @@ const personSchema = mongoose.Schema({
     phoneNumber: {
         type: Number,
         required: true,
-        unique: true
     },
     email: {
         type: String,

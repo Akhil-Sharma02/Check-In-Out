@@ -31,16 +31,14 @@ const sendMail = function (req, todayDate, currentTime, isAvailable) {
             text: req.name + ', you just checked out at ' + currentTime + ' on ' + todayDate + '.',
         };
     };
-    console.log(currentTime);
-    console.log(todayDate);
-    sgMail
-        .send(msg)
-        .then(() => {
-            console.log('Email sent')
-        })
-        .catch((error) => {
-            console.error(error)
-        });
+    // sgMail
+    //     .send(msg)
+    //     .then(() => {
+    //         console.log('Email sent')
+    //     })
+    //     .catch((error) => {
+    //         console.error(error)
+    //     });
 }
 
 
