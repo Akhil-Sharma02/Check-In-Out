@@ -1,1 +1,0 @@
-This is an app that stores the check in/check out time of employees and stores them in databse(MongoDB).

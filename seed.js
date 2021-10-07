@@ -77,4 +77,5 @@ const seedDB = async() => {
     console.log("Db Seeded");
 };
 
+
 module.exports = seedDB;
