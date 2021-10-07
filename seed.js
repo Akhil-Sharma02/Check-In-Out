@@ -78,4 +78,5 @@ const seedDB = async() => {
 };
 
 
+
 module.exports = seedDB;
